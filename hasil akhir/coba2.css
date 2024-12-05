@@ -105,3 +105,46 @@ nav {
         background-color: blueviolet;
     }
 }
+
+.footer {
+    background: linear-gradient(to bottom right,#6f42c1);
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo-img {
+    width: 70px; 
+    height: auto;
+    margin-left: 20px; 
+}
+
+.footer-menu ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li, .footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a, .footer-social ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footer-menu ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ul li a {
+    font-size: 12px;
+}
+
+.footer-social ul li a:hover {
+    color: #ffdd57;
+}

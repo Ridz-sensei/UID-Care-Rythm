@@ -12,41 +12,67 @@ a {
     text-decoration: none;
 }
 
-
-.navbar{
-    background: linear-gradient(to top, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 10;
-    
+.custom-position {
+    left: -25px !important;
 }
-.navbar-container {
-    padding: 0 50px; /* Tambahkan jarak kiri dan kanan */
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
-}
-
-.logo {
-    max-height: 50px; /* Ukuran maksimum logo */
-    width: auto;
-}
-
-.nav-link {
-    color: blueviolet; /* Warna teks link */
-}
-
-.nav-link:hover {
-    color: blueviolet; /* Warna teks saat hover */
-}
-
 
 /* Navigasi */
-
-
-.logo {
-    max-height: 50px; /* logo navbar */
-    width: auto;
+.top-bar {
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(138, 43, 226, 0.5));
+    margin: 0;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center; /* Rata vertikal tengah */
+    justify-content: space-between; /* Rata kanan-kiri */
+    height: 12x;
 }
 
+
+
+nav {
+    ul {
+        list-style: none;
+    }
+    .nav-item {
+        position: relative;
+    }
+  
+    .nav-link {
+        color: #000; /* Warna teks default */
+        text-decoration: none; /* Hilangkan underline bawaan */
+        padding: 10px 20px;
+    }
+  
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: blueviolet;
+    }
+  
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
+  
+    .nav-link:hover, .nav-link.active {
+        color: blueviolet;
+    }
+}
+
+.catatan-kegiatan{
+    display: flex;
+    justify-content: space-between;
+    .kegiatan {
+        margin: 0 ;
+        height: 100px;
+        width: 30%;
+    }
+}
 
 /* Bagian Utama */
 .hero-section {
@@ -82,4 +108,8 @@ a {
 }
 .btn{
     background-color: blueviolet;
+}
+#log{
+    height: 75px;
+    width: auto;
 }
