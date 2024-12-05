@@ -148,3 +148,10 @@ nav {
 .footer-social ul li a:hover {
     color: #ffdd57;
 }
+
+.btn-success{
+    background-color: blueviolet;
+}
+.btn-success:hover{
+    background-color: rgb(166, 92, 235);
+}
