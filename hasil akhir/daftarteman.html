@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Teman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #270e56;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: #6f42c1;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .list {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px;
+        }
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #270e56;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .back-button {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .back-button button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #270e56;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <div class="list-item">
+                <div class="profile">
+                    <div class="profile-icon"></div>
+                    <span>Akbar</span>
+                </div>
+                <div>Terakhir aktif satu jam yang lalu</div>
+            </div>
+            <div class="list-item">
+                <div class="profile">
+                    <div class="profile-icon"></div>
+                    <span>Budiono Siregar</span>
+                </div>
+                <div>Terakhir aktif satu hari yang lalu</div>
+            </div>
+            <div class="list-item">
+                <div class="profile">
+                    <div class="profile-icon"></div>
+                    <span>David</span>
+                </div>
+                <div>Terakhir aktif lima hari yang lalu</div>
+            </div>
+            <div class="list-item">
+                <div class="profile">
+                    <div class="profile-icon"></div>
+                    <span>Liam</span>
+                </div>
+                <div>Terakhir aktif sepuluh menit yang lalu</div>
+            </div>
+        </div>
+        <div class="back-button">
+            <button>&larr; Kembali</button>
+        </div>
+    </div>
+</body>
+</html>

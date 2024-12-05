@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Jadwal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #270e56, #6f42c1);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #6f42c1;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        header .close-btn {
+            font-size: 20px;
+            border: none;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        header .day {
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        header .day::after {
+            content: " >";
+            margin-left: 5px;
+        }
+
+        .schedule {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+            overflow-y: auto; /* Supaya scroll jika banyak data */
+        }
+
+        .time {
+            padding: 10px 0;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="close-btn">✕</button>
+            <h1>Jadwal</h1>
+            <span class="day">Hari ini</span>
+        </header>
+        <div class="schedule">
+            <div class="time">06.00</div>
+            <div class="time">07.00</div>
+            <div class="time">07.30</div>
+            <div class="time">08.00</div>
+            <div class="time">08.30</div>
+            <div class="time">09.00</div>
+            <div class="time">09.30</div>
+            <div class="time">10.00</div>
+            <div class="time">10.30</div>
+            <div class="time">11.00</div>
+            <div class="time">11.30</div>
+            <div class="time">12.00</div>
+            <div class="time">12.30</div>
+        </div>
+    </div>
+</body>
+</html>

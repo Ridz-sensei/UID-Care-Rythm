@@ -1,0 +1,85 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
+    background-size: cover;
+    background-position: top;
+    height: 100%; /* Tinggi elemen sesuai dengan tinggi viewport */
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar{
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    
+}
+.navbar-container {
+    padding: 0 50px; /* Tambahkan jarak kiri dan kanan */
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
+}
+
+.logo {
+    max-height: 50px; /* Ukuran maksimum logo */
+    width: auto;
+}
+
+.nav-link {
+    color: blueviolet; /* Warna teks link */
+}
+
+.nav-link:hover {
+    color: blueviolet; /* Warna teks saat hover */
+}
+
+
+/* Navigasi */
+
+
+.logo {
+    max-height: 50px; /* logo navbar */
+    width: auto;
+}
+
+
+/* Bagian Utama */
+.hero-section {
+    min-height: 100vh; /* Ketinggian penuh layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    color: #000;
+}
+
+/* Kartu Fitur */
+.feature-card {
+    background-color: white; /* Latar belakang putih */
+    color: black; /* Teks warna hitam */
+    padding: 20px;
+    border-radius: 11px; /* Sudut melingkar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.btn:hover {
+    background-color: chocolate
+}
+
+.mt-4{
+    color: #000;
+}
+
+.container{
+    color: #000;
+}
+.btn{
+    background-color: blueviolet;
+}

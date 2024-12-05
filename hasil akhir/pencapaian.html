@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pencapaian</title>
+  <style>
+    /* Gaya Umum */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #270e56;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      height: 100%;
+      max-height: 700px;
+      background-color: #6f42c1;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .trophy-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .trophy {
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #270e56;
+    }
+
+    .trophy-icon {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+
+    /* Search bar */
+    .search-bar {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      color: white;
+      background-color: #6f42c1;
+    }
+
+    /* List of achievements */
+    .achievements {
+      margin-top: 20px;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+
+    .achievement {
+      background-color: #270e56;
+      margin-top: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* Menjaga teks rata kiri */
+      border: 2px solid #6f42c1;
+    }
+
+    .achievement div {
+      flex-grow: 1; /* Membuat teks mengisi ruang yang tersisa */
+    }
+
+    .achievement h3 {
+      font-size: 18px;
+      margin: 0;
+      color: white;
+      text-align: left; /* Meratakan judul ke kiri */
+    }
+
+    .achievement p {
+      font-size: 14px;
+      margin: 5px 0 0;
+      color: white;
+      text-align: left; /* Meratakan deskripsi ke kiri */
+    }
+
+    /* Styling for button */
+    .achievement button {
+      background-color: #6f42c1;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .achievement button:hover {
+      background-color: #5b32a1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header with trophy -->
+    <div class="header">
+      <div class="trophy-container">
+        <div class="trophy">3</div>
+        <div class="trophy-icon">🏆</div>
+      </div>
+      <h2>Pencapaian</h2>
+    </div>
+
+    <!-- Search bar -->
+    <input type="text" class="search-bar" placeholder="Cari pencapaian" style="color:white;" />
+
+    <!-- Achievements List -->
+    <div class="achievements">
+      <!-- Achievement 1 -->
+      <div class="achievement">
+        <div>
+          <h3>Mulai</h3>
+          <p>Masuk dan menjadi pengguna</p>
+        </div>
+        <button>Hapus</button>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="achievement">
+        <div>
+          <h3>10 hari</h3>
+          <p>Aktif selama 10 hari berturut-turut</p>
+        </div>
+        <button>Hapus</button>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="achievement">
+        <div>
+          <h3>7 hari streak</h3>
+          <p>Melakukan semua kegiatan harian tanpa kosong selama seminggu</p>
+        </div>
+        <button>Hapus</button>
+      </div>
+
+      <!-- Achievement 4 -->
+      <div class="achievement">
+        <div>
+          <h3>10 hari streak</h3>
+          <p>Melakukan semua kegiatan harian tanpa kosong selama 10 hari</p>
+        </div>
+        <button>Hapus</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

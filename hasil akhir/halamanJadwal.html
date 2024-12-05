@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Care Rythm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="coba2.css">
+</head>
+<body>
+    <!-- topbar -->
+    <div class="top-bar px-5">
+      <div class="d-flex align-items-end justify-content-between">
+          <!-- logo -->
+          <div class="logo py-3">
+              <a href="">
+                  <img src="../image/Logo_ungu.png" alt="" style="height: 75px; width: auto;">
+              </a>
+          </div>
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block py-0">
+              <ul class="navbar-nav d-flex gap-3 px-0 my-0">
+                  <li class="nav-item"><a class="nav-link" href="Halaman Utama.html">Halaman Utama</a></li>
+                  <li class="nav-item"><a class="nav-link" href="halamanJadwal.html">Jadwal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pagekegiatan.html">Kegiatan</a></li>
+              </ul>
+          </nav>
+          <!-- profil -->
+          <div class="profil d-flex align-self-center py-3">
+              <div class="nama-profil d-none d-md-block pe-3"><h3>Contoh Nama</h3>deskripsi</div>
+              <div class="dropdown-center">
+                  <a data-bs-toggle="dropdown">
+                      <div class="rounded-circle overflow-hidden" style="width: 75px; height: 75px;">
+                          <img src="../image/TesProfil.png" alt="foto" class="">
+                      </div>
+                  </a>
+                  <ul class="dropdown-menu custom-position">
+                      <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                      <li><a class="dropdown-item" href="pencapaian.html">Pencapaian</a></li>
+                      <li class="d-block d-md-none"><a class="dropdown-item" href="#">Teman</a></li>
+                      <li class="d-block d-lg-none"><a class="dropdown-item" href="halamanJadwal.html">Jadwal</a></li>
+                      <li class="d-block d-lg-none"><a class="dropdown-item" href="#">Kegiatan</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Konten Kegiatan -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Jadwal</h1>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <form action="../Jadwal/tambahisijadwal.html">
+          <button class="btn btn-success">+ Tambah Jadwal</button>
+        </form>
+
+        <form action="editjadwal.html">
+          <div class="d-flex gap-2">
+            <button class="btn btn-success">Hari Ini</button>
+          </div>
+        </div>
+    </form>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title">Jadwal</h5>
+              <p class="text-end mb-0">Selasa</p>
+            </div>
+      
+            <!-- Jadwal List -->
+            <div class="jadwal-list mt-3">
+              <!-- Kelas Bahasa Inggris -->
+              <div class="jadwal-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6>Kelas Bahasa Inggris</h6>
+                  <small class="text-muted">07:30 - 08:30</small>
+                </div>
+                <form action="../Jadwal/ubahisijadwal.html">
+                <button class="btn btn-outline-primary btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                  </svg>
+                </button>
+            </form>
+              </div>
+      
+              <!-- Matematika -->
+              <div class="jadwal-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6>Matematika</h6>
+                  <small class="text-muted">09:30 - 10:30</small>
+                </div>
+                <button class="btn btn-outline-primary btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                  </svg>
+                </button>
+              </div>
+      
+              <!-- IPA -->
+              <div class="jadwal-item d-flex justify-content-between align-items-center">
+                <div>
+                  <h6>IPA</h6>
+                  <small class="text-muted">11:30 - 12:30</small>
+                </div>
+                <button class="btn btn-outline-primary btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="../image/logo.png" alt="Care Rhythm Logo" class="footer-logo-img mb-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <h5>Tentang</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="#">Fitur</a></li>
+                                <li><a href="#">Kebijakan Privasi</a></li>
+                                <li><a href="#">Persyaratan Layanan</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <h5>Ikuti</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+

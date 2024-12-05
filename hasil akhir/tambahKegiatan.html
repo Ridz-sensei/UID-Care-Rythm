@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Kegiatan</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Tambah Kegiatan</h1>
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="subject" placeholder="Masukkan nama Kegiatan">
+        </div>
+
+        <div class="form-group">
+            <label for="catatan">Catatan</label>
+            <textarea name="catatan" placeholder="Masukkan Catatan">
+                
+            </textarea>
+        </div>
+
+        <div class="form-group" id="kategori">
+            <label for="kategori">Kategori</label>
+            <select id="kategori" name="kategori" required>
+              <option value="Olahraga" selected>Olahraga</option>
+              <option value="Membaca">Membaca</option>
+            </select>
+          </div>
+
+        <div class="form-group">
+            <label>Tanggal & Waktu</label>
+            <input type="date" class="tgl">
+            <input type="time" class="time-input" >
+        </div>
+        
+        <div class="checkbox">
+        <label><input type="checkbox" value="Senin" />Senin</label>
+        <label><input type="checkbox" value="Selasa" />Selasa</label>
+        <label><input type="checkbox" value="Rabu" />Rabu</label>
+        <label><input type="checkbox" value="Kamis" />Kamis</label>
+        <label><input type="checkbox" value="Kamis" />Jumat</label>
+        <label><input type="checkbox" value="Kamis" />Sabtu</label>
+        <label><input type="checkbox" value="Kamis" />Minggu</label>
+        </div>
+
+        <div class="actions">
+            <button class="add-btn">Tambah</button>
+            <button class="cancel-btn">Batal</button>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

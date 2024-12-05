@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+}
+
+.top-bar {
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
+    margin: 0;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.custom-position {
+    left: -25px !important;
+}
+
+.profil {
+    img {
+        height: 75px;
+        width: auto;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+    }
+    .nav-item {
+        position: relative;
+    }
+  
+    .nav-link {
+        color: #000; /* Warna teks default */
+        text-decoration: none; /* Hilangkan underline bawaan */
+        padding: 10px 20px;
+    }
+  
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: blueviolet;
+    }
+  
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
+  
+    .nav-link:hover, .nav-link.active {
+        color: blueviolet;
+    }
+}

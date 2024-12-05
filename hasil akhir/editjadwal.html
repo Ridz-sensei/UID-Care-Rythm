@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Jadwal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #270e56, #6f42c1);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+            width: 80%; /* Lebar lebih besar agar mengisi setengah layar */
+            max-width: 900px; /* Lebar maksimal lebih besar */
+            min-width: 600px; /* Lebar minimal lebih besar */
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            height: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        .time-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .time-item {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .time-item .details {
+            flex: 1;
+        }
+
+        .time-item .edit {
+            font-size: 18px;
+            color: #6f42c1;
+            text-decoration: none;
+        }
+
+        .time {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .subject {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Jadwal</h1>
+            <a href="#">Hari ini ></a>
+        </div>
+        <ul class="time-list">
+            <li class="time-item">
+                <div class="details">
+                    <div class="time">07.30 - 08.30</div>
+                    <div class="subject">Kelas Bahasa Inggris</div>
+                </div>
+                <a href="#" class="edit">✎</a>
+            </li>
+            <li class="time-item">
+                <div class="details">
+                    <div class="time">08.30 - 09.30</div>
+                    <div class="subject">Matematika</div>
+                </div>
+                <a href="#" class="edit">✎</a>
+            </li>
+            <li class="time-item">
+                <div class="details">
+                    <div class="time">10.30 - 12.30</div>
+                    <div class="subject">Les Pribadi</div>
+                </div>
+                <a href="#" class="edit">✎</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
