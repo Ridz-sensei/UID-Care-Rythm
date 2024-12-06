@@ -67,8 +67,20 @@ nav {
     justify-content: space-between;
     .kegiatan {
         margin: 0 ;
-        height: 100px;
+        min-height: 100px;
         width: 30%;
+        .card {
+            p {
+                margin: 0;
+            }
+            height: 100%;
+            .penjelasan{
+                margin: 0;
+                color: grey;
+                font-size: x-small;
+                font-weight: bold;
+            }
+        }
     }
 }
 
@@ -86,23 +98,23 @@ nav {
             }
         }
         .backline {
-            background: blueviolet
+            background: linear-gradient(to top left, transparent, rgba(138, 43, 226, 0.5));
         }
         .teman {
             direction: ltr;
             .card-overlay {
-                background: rgba(138, 43, 226, 0.5);
+                background: linear-gradient(to bottom , transparent, rgba(138, 43, 226, 0.5));
             }
             .card:hover {
                 .card-overlay {
-                    background: rgb(138, 43, 226);
+                    background: rgba(138, 43, 226,0.8);
                 }
             }
         }
     }
     .jadwal {
         height: max;
-        background-color: blueviolet;
+        background: linear-gradient(to bottom left, blueviolet, transparent, rgba(138, 43, 226, 0.5));
     }
 }
 
