@@ -16,20 +16,11 @@ a {
     left: -25px !important;
 }
 
-/* Navigasi */
 .top-bar {
-    background: linear-gradient(to top, rgb(255, 255, 255), rgba(138, 43, 226, 0.5));
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(138, 43, 226,0.5));
     margin: 0;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 30px;
-    display: flex;
-    align-items: center; /* Rata vertikal tengah */
-    justify-content: space-between; /* Rata kanan-kiri */
-    height: 12x;
 }
-
-
-
 nav {
     ul {
         list-style: none;
