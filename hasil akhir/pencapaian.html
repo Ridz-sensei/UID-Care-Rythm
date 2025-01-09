@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pencapaian</title>
   <style>
-    
     body {
       font-family: Arial, sans-serif;
-      background-color: #270e56;
+      background: linear-gradient(135deg, #e4cbf8, #cdb4db);
       margin: 0;
       padding: 0;
       display: flex;
@@ -22,11 +21,11 @@
       width: 100%;
       max-width: 1200px;
       height: auto;
-      background-color: #6f42c1;
+      background: rgba(255, 255, 255, 0.8);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      color: white;
+      color: #270e56;
     }
 
     .header {
@@ -48,13 +47,13 @@
     .trophy {
       width: 30px;
       height: 30px;
-      background-color: white;
+      background-color: #6f42c1;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 18px;
-      color: #270e56;
+      color: white;
     }
 
     .trophy-icon {
@@ -62,60 +61,33 @@
       margin-left: 10px;
     }
 
-            /* Search bar */
     .search-bar {
       width: 100%;
-      max-width: 400px; /* untuk batasi lebar maksimum elemen */
-      padding: 10px; /* biar ngasih ruang di dalam elemen */
-      margin: 20px auto; /* buat jadi posisi rata tengah dengan jarak vertikal */
-      border-radius: 5px; /* mbuat sudut membulat pokonya*/
-      border: 1px solid #ddd; /* ini tuh buat nambahin border ringan */
-      font-size: 16px; 
-      color: white; 
-      background-color: #6f42c1; 
-      text-align: center; /* ini teks di dalam input rata tengah */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* bayangan buat tampilan lebih menarik gitudehhhh */
-      display: block; /* mastiin margin auto berfungsi */
+      max-width: 400px;
+      padding: 10px;
+      margin: 20px auto;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: block;
     }
 
-    /* Container */
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      height: 80vh; /* buat membatasi tinggi maksimal container */
-      background-color: #6f42c1;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      color: white;
-      overflow: hidden; /* buat mastiin scroll hanya di area daftar */
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Achievements */
     .achievements {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      overflow-y: auto; /* nambahin scroll vertikal jika konten berlebih */
-      height: 100%; /* agar ngambil ruang maksimal dalam container */
-      padding-right: 10px; /* ngasih ruang untuk scroll bar */
-    }
-
-
-    /* List of achievements */
-    .achievements {
-      display: flex;
-      flex-wrap: wrap; /* buat kartu otomatis turun kalo tidak cukup ruang */
-      gap: 20px; /* untuk spasi antar kartunya */
-      justify-content: center; /* nenempatkan kartu di tengah */
+      overflow-y: auto; /* Enables vertical scrolling */
+      max-height: 400px; /* Adjust this height as needed */
+      padding-right: 10px;
     }
 
     .achievement {
-      width: 260px; /* ukuran dari kartunya */
-      background-color: #270e56;
+      width: 260px;
+      background: rgba(111, 66, 193, 0.2);
       padding: 20px;
       border-radius: 10px;
       display: flex;
@@ -134,16 +106,15 @@
     .achievement h3 {
       font-size: 18px;
       margin: 10px 0 5px;
-      color: white;
+      color: #270e56;
     }
 
     .achievement p {
       font-size: 14px;
       margin: 0 0 15px;
-      color: white;
+      color: #270e56;
     }
 
-    /* Styling for button */
     .achievement button {
       background-color: #6f42c1;
       border: none;
@@ -174,58 +145,38 @@
     <!-- Search bar -->
     <input type="text" class="search-bar" placeholder="Cari pencapaian" />
 
-
     <!-- Achievements List -->
     <div class="achievements">
-      <!-- Achievement 1 -->
       <div class="achievement">
         <span class="achievement-icon">🚀</span>
         <h3>Mulai</h3>
         <p>Masuk dan menjadi pengguna</p>
         <button>Pin</button>
       </div>
-
-      <!-- Achievement 2 -->
       <div class="achievement">
         <span class="achievement-icon">📅</span>
         <h3>10 hari</h3>
         <p>Aktif selama 10 hari berturut-turut</p>
         <button>Pin</button>
       </div>
-
-      <!-- Achievement 3 -->
       <div class="achievement">
         <span class="achievement-icon">🔥</span>
         <h3>7 hari streak</h3>
         <p>Melakukan semua kegiatan harian tanpa kosong selama seminggu</p>
         <button>Pin</button>
       </div>
-
-      <!-- Achievement 4 -->
       <div class="achievement">
         <span class="achievement-icon">🌟</span>
         <h3>10 hari streak</h3>
         <p>Melakukan semua kegiatan harian tanpa kosong selama 10 hari</p>
         <button>Pin</button>
       </div>
-
-      <!-- Achievement 5 -->
       <div class="achievement">
         <span class="achievement-icon">💪🏻</span>
         <h3>15 hari streak</h3>
         <p>Melakukan semua kegiatan harian tanpa kosong selama 15 hari</p>
         <button>Pin</button>
       </div>
-
-      <!-- Achievement 6 -->
-      <div class="achievement">
-        <span class="achievement-icon">🏅</span>
-        <h3>20 hari streak</h3>
-        <p>Melakukan semua kegiatan harian tanpa kosong selama 20 hari</p>
-        <button>Pin</button>
-      </div>
-
-      <!-- Achievement 6 -->
       <div class="achievement">
         <span class="achievement-icon">🏅</span>
         <h3>20 hari streak</h3>

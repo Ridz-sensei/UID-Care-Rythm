@@ -141,14 +141,14 @@ p {
 }
 
 .footer{
-    padding: 25px 0;
+    padding: 50px 0;
     h5 {
         color: darkblue ;
     }
     a {
         color: white;
     }
-    background: blueviolet;
+    background: rgba(137, 43, 226, 0.597);
     img{
         height: 100px;
     }

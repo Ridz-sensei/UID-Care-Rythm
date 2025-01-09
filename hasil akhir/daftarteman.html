@@ -12,24 +12,33 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #270e56;
-            color: white;
+            background: linear-gradient(to bottom, #e6d2f0, #d0b4ea);
+            color: #4b3b58;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .container {
-            width: 100%;
-            height: 100%;
-            background-color: #6f42c1;
+            width: 90%;
+            max-width: 600px;
+            background-color: white;
             border-radius: 15px;
             padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
+            gap: 15px;
+        }
+        .header {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4b3b58;
         }
         .list {
             flex: 1;
+            max-height: 300px; /* Batas tinggi agar scroll aktif */
             overflow-y: auto;
             display: flex;
             flex-direction: column;
@@ -40,10 +49,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #270e56;
+            background-color: #f8f3fc;
             padding: 15px;
-            border-radius: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .profile {
             display: flex;
@@ -53,29 +62,30 @@
         .profile-icon {
             width: 40px;
             height: 40px;
-            background-color: white;
+            background-color: #d0b4ea;
             border-radius: 50%;
         }
         .back-button {
             text-align: center;
-            margin-top: 10px;
         }
         .back-button button {
             padding: 10px 20px;
             border: none;
             border-radius: 20px;
-            background-color: #270e56;
+            background-color: #d0b4ea;
             color: white;
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .back-button button:hover {
+            background-color: #b394d8;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
-          </svg></div>
+        <div class="header">Daftar Teman</div>
         <div class="list">
             <div class="list-item">
                 <div class="profile">
@@ -104,6 +114,20 @@
                     <span>Liam</span>
                 </div>
                 <div>Terakhir aktif sepuluh menit yang lalu</div>
+            </div>
+            <div class="list-item">
+                <div class="profile">
+                    <div class="profile-icon"></div>
+                    <span>Sarah</span>
+                </div>
+                <div>Terakhir aktif satu bulan yang lalu</div>
+            </div>
+            <div class="list-item">
+                <div class="profile">
+                    <div class="profile-icon"></div>
+                    <span>Hani</span>
+                </div>
+                <div>Terakhir aktif satu minggu yang lalu</div>
             </div>
         </div>
         <div class="back-button">

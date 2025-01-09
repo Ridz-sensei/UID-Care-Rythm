@@ -108,12 +108,11 @@ nav {
     }
     .jadwal {
         height: max;
-        background: linear-gradient(to bottom right, blueviolet, transparent, rgba(138, 43, 226, 0.5));
     }
 }
 
 .footer {
-    background: linear-gradient(to top left,white, blueviolet);
+    background: linear-gradient(to top left,white, rgba(137, 43, 226, 0.5));
     color: rgb(0, 0, 0);
     padding: 40px 0;
     position: relative;
@@ -160,4 +159,63 @@ nav {
 }
 .btn-success:hover{
     background-color: rgb(166, 92, 235);
+}
+
+.jadwal-mingguan {
+    background-color: rgba(137, 43, 226, 0.05);
+    padding: 10px;
+}
+
+.schedule-container {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr);
+    grid-template-rows: 50px repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.schedule-container div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.time-slot {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.day-name {
+    background-color: #6f42c1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+
+.schedule-card {
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgb(138, 43, 226);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(138, 43, 226, 0.2);
+    height: 100%;
+}
+
+.schedule-card:hover{
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-card p {
+    margin: 0;
+    text-align: center;
 }
